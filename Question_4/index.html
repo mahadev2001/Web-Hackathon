@@ -1,0 +1,50 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Hackaton</title>
+    <script>
+        var arr=[]
+        function addfriends()
+        { 
+        var first=document.getElementById("fname").value
+        var last=document.getElementById("lname").value
+        var obj= {fname:first, lname:last}
+        arr.push(obj)
+        console.log('saved')
+        }
+        function showall(){
+        for(i=0;i<arr.length;i++){
+            console.log(arr[i])
+        }
+    }
+    </script>
+  </head>
+  <body>
+    <div class="container">
+  <div class="form-group ">
+      <h2>Add Friends</h2>
+    <label for="">First Name</label>
+    <input type="text" class="form-control" id="fname">
+  </div>
+  
+  <div class="form-group">
+    <label for="">Last Name:</label>
+    <input type="text" class="form-control" id="lname">
+  </div>
+  <br>
+  <button type="submit" class="btn btn-success" onclick="addfriends()">Save to Array</button>
+  <br><br><br>
+  <button type="submit" class="btn btn-primary" onclick="showall()">Display All</button>
+    </div>
+</body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </body>
+</html>
