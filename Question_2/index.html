@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .capitalize {
+   text-transform: capitalize;
+}
+        </style>
+        
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<script src="index.js"></script>
+</head>
+
+<body>
+
+<div ng-app="myApp" ng-controller="myCtrl">
+    <h3>Tit implementation</h3>
+<input ng-model="t1">
+<p class="capitalize"><b>{{t1}}</b></p>
+<h3>Reverse Srting implementation</h3>
+<input ng-model="t2">
+<p ><b>{{t2 |reverse}}</b></p>
+<h3>Capitalize implementation</h3>
+<input ng-model="t3">
+<p class="capitalize"><b>{{t3}}</b></p>
+<h3>Capitalize implementation</h3>
+<input ng-model="t4">
+<p class="capitalize"><b>{{t4}}</b></p>
+</div>
+</body>
+</html>
